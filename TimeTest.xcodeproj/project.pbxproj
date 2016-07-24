@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F037C1C1D40639E0009F1DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F037C1B1D40639E0009F1DD /* main.m */; };
+		3F037C1F1D40639E0009F1DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F037C1E1D40639E0009F1DD /* AppDelegate.m */; };
+		3F037C251D40639F0009F1DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F037C231D40639F0009F1DD /* Main.storyboard */; };
+		3F037C271D40639F0009F1DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F037C261D40639F0009F1DD /* Assets.xcassets */; };
+		3F037C2A1D40639F0009F1DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F037C281D40639F0009F1DD /* LaunchScreen.storyboard */; };
+		3F037D1F1D40AB660009F1DD /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F037D1E1D40AB660009F1DD /* CalendarViewController.m */; };
+		3F037D311D41E8700009F1DD /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F037D301D41E8700009F1DD /* NSDate+Formatter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F037C171D40639E0009F1DD /* TimeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F037C1B1D40639E0009F1DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F037C1D1D40639E0009F1DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F037C1E1D40639E0009F1DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F037C241D40639F0009F1DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F037C261D40639F0009F1DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F037C291D40639F0009F1DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F037C2B1D40639F0009F1DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F037D1D1D40AB660009F1DD /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		3F037D1E1D40AB660009F1DD /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		3F037D2F1D41E8700009F1DD /* NSDate+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
+		3F037D301D41E8700009F1DD /* NSDate+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatter.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F037C141D40639E0009F1DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F037C0E1D40639E0009F1DD = {
+			isa = PBXGroup;
+			children = (
+				3F037C191D40639E0009F1DD /* TimeTest */,
+				3F037C181D40639E0009F1DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F037C181D40639E0009F1DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F037C171D40639E0009F1DD /* TimeTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F037C191D40639E0009F1DD /* TimeTest */ = {
+			isa = PBXGroup;
+			children = (
+				3FE20CD81D44B16E00CB786E /* Calendar */,
+				3F037C1D1D40639E0009F1DD /* AppDelegate.h */,
+				3F037C1E1D40639E0009F1DD /* AppDelegate.m */,
+				3F037D2F1D41E8700009F1DD /* NSDate+Formatter.h */,
+				3F037D301D41E8700009F1DD /* NSDate+Formatter.m */,
+				3F037C231D40639F0009F1DD /* Main.storyboard */,
+				3F037C261D40639F0009F1DD /* Assets.xcassets */,
+				3F037C281D40639F0009F1DD /* LaunchScreen.storyboard */,
+				3F037C2B1D40639F0009F1DD /* Info.plist */,
+				3F037C1A1D40639E0009F1DD /* Supporting Files */,
+			);
+			path = TimeTest;
+			sourceTree = "<group>";
+		};
+		3F037C1A1D40639E0009F1DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F037C1B1D40639E0009F1DD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FE20CD81D44B16E00CB786E /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				3F037D1D1D40AB660009F1DD /* CalendarViewController.h */,
+				3F037D1E1D40AB660009F1DD /* CalendarViewController.m */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F037C161D40639E0009F1DD /* TimeTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F037C2E1D40639F0009F1DD /* Build configuration list for PBXNativeTarget "TimeTest" */;
+			buildPhases = (
+				3F037C131D40639E0009F1DD /* Sources */,
+				3F037C141D40639E0009F1DD /* Frameworks */,
+				3F037C151D40639E0009F1DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeTest;
+			productName = TimeTest;
+			productReference = 3F037C171D40639E0009F1DD /* TimeTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F037C0F1D40639E0009F1DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = LvJianfeng;
+				TargetAttributes = {
+					3F037C161D40639E0009F1DD = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3F037C121D40639E0009F1DD /* Build configuration list for PBXProject "TimeTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F037C0E1D40639E0009F1DD;
+			productRefGroup = 3F037C181D40639E0009F1DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F037C161D40639E0009F1DD /* TimeTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F037C151D40639E0009F1DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F037C2A1D40639F0009F1DD /* LaunchScreen.storyboard in Resources */,
+				3F037C271D40639F0009F1DD /* Assets.xcassets in Resources */,
+				3F037C251D40639F0009F1DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F037C131D40639E0009F1DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F037C1F1D40639E0009F1DD /* AppDelegate.m in Sources */,
+				3F037D1F1D40AB660009F1DD /* CalendarViewController.m in Sources */,
+				3F037D311D41E8700009F1DD /* NSDate+Formatter.m in Sources */,
+				3F037C1C1D40639E0009F1DD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3F037C231D40639F0009F1DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F037C241D40639F0009F1DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F037C281D40639F0009F1DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F037C291D40639F0009F1DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F037C2C1D40639F0009F1DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3F037C2D1D40639F0009F1DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F037C2F1D40639F0009F1DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TimeTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LvJianfeng.TimeTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F037C301D40639F0009F1DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TimeTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LvJianfeng.TimeTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F037C121D40639E0009F1DD /* Build configuration list for PBXProject "TimeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F037C2C1D40639F0009F1DD /* Debug */,
+				3F037C2D1D40639F0009F1DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F037C2E1D40639F0009F1DD /* Build configuration list for PBXNativeTarget "TimeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F037C2F1D40639F0009F1DD /* Debug */,
+				3F037C301D40639F0009F1DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F037C0F1D40639E0009F1DD /* Project object */;
+}
