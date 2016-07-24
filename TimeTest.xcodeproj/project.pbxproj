@@ -14,6 +14,7 @@
 		3F037C2A1D40639F0009F1DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F037C281D40639F0009F1DD /* LaunchScreen.storyboard */; };
 		3F037D1F1D40AB660009F1DD /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F037D1E1D40AB660009F1DD /* CalendarViewController.m */; };
 		3F037D311D41E8700009F1DD /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F037D301D41E8700009F1DD /* NSDate+Formatter.m */; };
+		3FE20CDA1D44B70C00CB786E /* 临时存储代码 in Resources */ = {isa = PBXBuildFile; fileRef = 3FE20CD91D44B70C00CB786E /* 临时存储代码 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		3F037D1E1D40AB660009F1DD /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
 		3F037D2F1D41E8700009F1DD /* NSDate+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
 		3F037D301D41E8700009F1DD /* NSDate+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatter.m"; sourceTree = "<group>"; };
+		3FE20CD91D44B70C00CB786E /* 临时存储代码 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "临时存储代码"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				3F037C281D40639F0009F1DD /* LaunchScreen.storyboard */,
 				3F037C2B1D40639F0009F1DD /* Info.plist */,
 				3F037C1A1D40639E0009F1DD /* Supporting Files */,
+				3FE20CD91D44B70C00CB786E /* 临时存储代码 */,
 			);
 			path = TimeTest;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FE20CDA1D44B70C00CB786E /* 临时存储代码 in Resources */,
 				3F037C2A1D40639F0009F1DD /* LaunchScreen.storyboard in Resources */,
 				3F037C271D40639F0009F1DD /* Assets.xcassets in Resources */,
 				3F037C251D40639F0009F1DD /* Main.storyboard in Resources */,
