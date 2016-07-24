@@ -1,5 +1,5 @@
 # LLCalendar
-## 简单的日历，由于项目想到，本来打算找轮子，可是拓展太繁琐了，就自己写了个简单的，超级容易拓展。
+## 简单的日历，由于项目涉及到了，本来打算找轮子，可是拓展太繁琐了，就自己写了个简单的，超级容易拓展。
 
 ![(Demo)](https://github.com/LvJianfeng/LLCalendar/blob/master/2.gif)
 
