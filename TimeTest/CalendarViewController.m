@@ -22,6 +22,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
 @property (strong, nonatomic) NSDate *tempDate;
+// 上一次选择index ，初始值为今天的index
+@property (assign, nonatomic) NSInteger lastSelectIndex;
 @end
 
 @implementation CalendarViewController
@@ -62,6 +64,7 @@
             mon.dateValue = dayDate;
             if ([dayDate.yyyyMMddByLineWithDate isEqualToString:[NSDate date].yyyyMMddByLineWithDate]) {
                 mon.isSelectedDay = YES;
+                self.lastSelectIndex = i - 1;
             }
             [self.dayModelArray addObject:mon];
             day++;
@@ -89,8 +92,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     CalendarCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CalendarCell" forIndexPath:indexPath];
-    cell.dayLabel.backgroundColor = [UIColor whiteColor];
-    cell.dayLabel.textColor = [UIColor blackColor];
+    
     id mon = self.dayModelArray[indexPath.row];
     if ([mon isKindOfClass:[MonthModel class]]) {
         cell.monthModel = (MonthModel *)mon;
@@ -107,10 +109,25 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (indexPath.row == _lastSelectIndex) return;
     id mon = self.dayModelArray[indexPath.row];
-    if ([mon isKindOfClass:[MonthModel class]]) {
-        self.dateLabel.text = [(MonthModel *)mon dateValue].yyyyMMddByLineWithDate;
+    id lastMon = self.dayModelArray[self.lastSelectIndex];
+    
+    if ([lastMon isKindOfClass:[MonthModel class]] && [mon isKindOfClass:[MonthModel class]]) {
+        MonthModel *lastMonthModel = (MonthModel *)lastMon;
+        lastMonthModel.isSelectedDay = NO;
+        
+        MonthModel *monthModel = (MonthModel *)mon;
+        monthModel.isSelectedDay = YES;
+        self.dateLabel.text = [monthModel dateValue].yyyyMMddByLineWithDate;
+
+        NSIndexPath *lastSelectPath = [NSIndexPath indexPathForItem:self.lastSelectIndex inSection:0];
+        [self.collectionView reloadItemsAtIndexPaths:@[lastSelectPath, indexPath]];
+        self.lastSelectIndex = indexPath.row;
     }
+    
+
 }
 
 - (UICollectionView *)collectionView{
@@ -228,7 +245,8 @@
         dayLabel.textAlignment = NSTextAlignmentCenter;
         dayLabel.layer.masksToBounds = YES;
         dayLabel.layer.cornerRadius = height * 0.5;
-        
+        dayLabel.backgroundColor = [UIColor whiteColor];
+        dayLabel.textColor = [UIColor blackColor];
         [self.contentView addSubview:dayLabel];
         self.dayLabel = dayLabel;
         
@@ -242,6 +260,9 @@
     if (monthModel.isSelectedDay) {
         self.dayLabel.backgroundColor = [UIColor redColor];
         self.dayLabel.textColor = [UIColor whiteColor];
+    } else {
+        self.dayLabel.backgroundColor = [UIColor whiteColor];
+        self.dayLabel.textColor = [UIColor blackColor];
     }
 }
 @end
